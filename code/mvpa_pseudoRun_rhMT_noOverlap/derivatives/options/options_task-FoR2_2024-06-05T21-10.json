@@ -1,0 +1,168 @@
+{
+  "QA": {
+    "glm": {
+      "do": false
+    }
+  },
+  "anatOnly": false,
+  "bidsFilterFile": {
+    "fmap": {
+      "modality": "fmap"
+    },
+    "bold": {
+      "modality": "func",
+      "suffix": "bold"
+    },
+    "t2w": {
+      "modality": "anat",
+      "suffix": "T2w"
+    },
+    "t1w": {
+      "modality": "anat",
+      "space": "",
+      "suffix": "T1w"
+    },
+    "mp2rage": {
+      "modality": "anat",
+      "space": "",
+      "suffix": "MP2RAGE"
+    },
+    "roi": {
+      "modality": "roi",
+      "suffix": "mask"
+    },
+    "xfm": {
+      "modality": "anat",
+      "suffix": "xfm",
+      "to": "T1w"
+    }
+  },
+  "boilerplate_only": false,
+  "contrastList": [],
+  "dir": {
+    "input": "",
+    "output": "",
+    "derivatives": "/Volumes/IqraMacFmri/visTac/fMRI_analysis/code/mvpa_pseudoRun_rhMT_noOverlap/derivatives",
+    "raw": "",
+    "preproc": "",
+    "stats": "",
+    "jobs": "/Volumes/IqraMacFmri/visTac/fMRI_analysis/code/mvpa_pseudoRun_rhMT_noOverlap/jobs/FoR2",
+    "roi": "/Volumes/IqraMacFmri/visTac/fMRI_analysis/code/mvpa_pseudoRun_rhMT_noOverlap/derivatives/bidspm-roi"
+  },
+  "dryRun": false,
+  "dummy_scans": 0,
+  "funcVolToSelect": [],
+  "funcVoxelDims": [],
+  "fwhm": {
+    "func": 6,
+    "contrast": 0
+  },
+  "glm": {
+    "roibased": {
+      "do": false
+    },
+    "maxNbVols": null,
+    "useDummyRegressor": false,
+    "keepResiduals": false
+  },
+  "groups": [""],
+  "model": {
+    "designOnly": false,
+    "file": "/Volumes/IqraMacFmri/visTac/fMRI_analysis/code/mvpa_pseudoRun_rhMT_noOverlap/../model/model-FoR2mvpa_smdl.json"
+  },
+  "msg": {
+    "color": ""
+  },
+  "parallelize": {
+    "do": false,
+    "nbWorkers": 1,
+    "killOnExit": true
+  },
+  "pathOutput": "/Volumes/IqraMacFmri/visTac/fMRI_analysis/code/mvpa_pseudoRun_rhMT_noOverlap/../../outputs/derivatives/decoding_pseudoRuns_noOverlap",
+  "pipeline": {
+    "type": "",
+    "name": "bidspm"
+  },
+  "query": {
+    "modality": [
+      "anat",
+      "func"
+    ]
+  },
+  "realign": {
+    "useUnwarp": true
+  },
+  "rename": true,
+  "segment": {
+    "do": true,
+    "force": false,
+    "biasfwhm": 60,
+    "samplingDistance": 3
+  },
+  "skullstrip": {
+    "do": true,
+    "force": false,
+    "threshold": 0.75,
+    "mean": false
+  },
+  "space": ["IXI549Space"],
+  "stc": {
+    "referenceSlice": [],
+    "skip": false
+  },
+  "subjects": [
+    "001",
+    "002",
+    "003",
+    "004",
+    "005",
+    "006",
+    "007",
+    "008",
+    "009",
+    "010",
+    "011",
+    "013",
+    "014",
+    "015",
+    "016",
+    "017",
+    "pil001",
+    "pil002",
+    "pil004",
+    "pil005"
+  ],
+  "taskName": ["FoR2"],
+  "tolerant": true,
+  "toolbox": {
+    "MACS": {
+      "model": {
+        "files": []
+      }
+    }
+  },
+  "useBidsSchema": false,
+  "useFieldmaps": true,
+  "verbosity": 2,
+  "zeropad": 2,
+  "results": {
+    "nodeName": "",
+    "name": [""],
+    "useMask": false,
+    "MC": "FWE",
+    "p": 0.05,
+    "k": 0,
+    "png": true,
+    "csv": true,
+    "atlas": "Neuromorphometrics",
+    "threshSpm": false,
+    "binary": false,
+    "montage": {
+      "do": false,
+      "slices": [],
+      "orientation": "axial",
+      "background": "/Users/shahzad/Documents/MATLAB/spm12/canonical/avg152T1.nii"
+    },
+    "nidm": true
+  }
+}

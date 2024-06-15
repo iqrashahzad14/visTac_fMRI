@@ -1,0 +1,30 @@
+{
+  "Name": "FoR2",
+  "Description": "contrasts for the FoR2 dataset",
+  "Input": {
+    "task": "FoR2"
+  },
+  "Steps": [
+    {
+      "Level": "run",
+      "Model": {
+        "X": [
+          "trial_type.visual_vertical",
+          "trial_type.visual_horizontal",
+          "trial_type.handUp_pinkyThumb",
+          "trial_type.handUp_fingerWrist",
+          "trial_type.handDown_pinkyThumb",
+          "trial_type.handDown_fingerWrist",
+          "trans_x", "trans_y", "trans_z", "rot_x", "rot_y", "rot_z"
+        ]
+      },
+      "AutoContrasts": [
+        "trial_type.visual_vertical",
+        "trial_type.visual_horizontal",
+        "trial_type.handUp_pinkyThumb",
+        "trial_type.handUp_fingerWrist"
+        "trial_type.handDown_pinkyThumb",
+        "trial_type.handDown_fingerWrist"]
+    }
+  ]
+}

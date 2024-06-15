@@ -1,0 +1,103 @@
+{
+    "QA": {
+        "func": {
+            "Basics": "on",
+            "FD": "on",
+            "Globals": "on",
+            "Motion": "on",
+            "Movie": "on",
+            "Voltera": "on",
+            "carpetPlot": true
+        },
+        "glm": {
+            "do": true
+        }
+    },
+    "anatReference": {
+        "session": "",
+        "type": "T1w"
+    },
+    "contrastList": [],
+    "dataDir": "",
+    "derivativesDir": "/Volumes/IqraMacFmri/visTac/fMRI_analysis/code/derivatives/cpp_spm",
+    "dir": {
+        "derivatives": "",
+        "raw": "",
+        "stats": "/Volumes/IqraMacFmri/visTac/fMRI_analysis/code/derivatives/cpp_spm-stats"
+    },
+    "funcVoxelDims": [],
+    "glm": {
+        "roibased": {
+            "do": false
+        }
+    },
+    "groups": [""],
+    "model": {
+        "file": "/Volumes/IqraMacFmri/visTac/fMRI_analysis/code/mvpa_MTProper/../model/model-FoR2mvpa_smdl.json",
+        "hrfDerivatives": [0,0]
+    },
+    "parallelize": {
+        "do": false,
+        "killOnExit": true,
+        "nbWorkers": 1
+    },
+    "pathOutput": "/Volumes/IqraMacFmri/visTac/fMRI_analysis/code/mvpa_MTProper/../../outputs/derivatives/decodingInMtProper-method1",
+    "query": [],
+    "realign": {
+        "useUnwarp": true
+    },
+    "result": {
+        "Steps": {
+            "Contrasts": {
+                "MC": "FWE",
+                "Name": "",
+                "k": 0,
+                "p": 0.05,
+                "useMask": false
+            },
+            "Level": "",
+            "Output": {
+                "NIDM_results": false,
+                "binary": false,
+                "csv": false,
+                "montage": {
+                    "background": "/Users/shahzad/Documents/MATLAB/spm12/canonical/avg152T1.nii,1",
+                    "do": false,
+                    "orientation": "axial",
+                    "slices": []
+                },
+                "png": false,
+                "thresh_spm": false
+            }
+        }
+    },
+    "skullstrip": {
+        "mean": false,
+        "threshold": 0.75
+    },
+    "space": "MNI",
+    "stc": {
+        "referenceSlice": [],
+        "skip": false,
+        "sliceOrder": []
+    },
+    "subjects": [
+        "001",
+        "003",
+        "004",
+        "005",
+        "006",
+        "007",
+        "008",
+        "009",
+        "010",
+        "015",
+        "016",
+        "pil004",
+        "pil005"
+    ],
+    "taskName": "FoR2",
+    "useFieldmaps": true,
+    "zeropad": 2,
+    "jobsDir": "/Volumes/IqraMacFmri/visTac/fMRI_analysis/code/derivatives/cpp_spm/JOBS/FoR2"
+}
